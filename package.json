@@ -4,13 +4,16 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
+    "build": "rimraf ipc-demo-* && electron-packager . --platrform=darwin,win32,linux --arch=x64 --icon=app",
     "start": "electron ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^21.3.0"
+    "electron": "^21.3.0",
+    "electron-packager": "^17.1.1",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "jquery": "^3.6.1",
