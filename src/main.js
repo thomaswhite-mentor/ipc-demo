@@ -1,9 +1,4 @@
-const { ipcMain } = require("electron");
 const electron = require("electron");
-const subscribe = require("./marker-subscriber");
-const { poi } = require("../src/poi-data");
-const { PointOfInterest } = require("./model/marker");
-const { POIDataService } = require("./services/marker-service");
 
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
